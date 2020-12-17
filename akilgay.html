@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akil's Pride</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+       /*
+            height: 100vh;
+            background-color: #000000;
+         */
+
+
+         background-image: url("rainbow.png");
+        }
+
+        div
+        {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p
+        {
+            color:black;
+            display: flex;
+            text-shadow: 2px 2px 10px rgb(255, 255, 255);
+            font-size: xx-large;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+
+        }
+
+        pre
+        {
+            color: bisque;
+            text-shadow: 2px 2px 10px blanchedalmond;
+            font-size: xx-large;
+            position: absolute;
+            bottom: 10 px; 
+           /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+        
+        br
+        {
+            background-color: rgb(43, 226, 83);
+            outline: none;
+            display: block;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 20px;
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            color: rgb(252, 5, 5);
+            text-shadow: 5px 5px 10px rgb(255, 2, 2);
+
+        }
+
+        button
+        {
+            background-color: transparent/* rgb(43, 226, 83)  */;
+            display: flex;
+            border:none;
+            padding: 14px 28px;
+            border-radius: 200px;
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            color: rgb(252, 5, 5);
+            text-shadow: 5px 5px 10px rgb(255, 2, 2);
+            
+        }
+        header
+        {
+            background-color:brown;
+            justify-content: center;
+            color:rgb(115, 252, 2);
+            display: flex;
+            text-shadow: 2px 2px 10px;
+            font-size: xx-large;
+
+
+        }
+        
+        img
+        {
+            margin: auto;
+            box-sizing: border-box;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Akil's Pride</header>
+    <div id="mosha">
+        <p>Click The Button Below To Enter The Page.</p>
+    </div>
+    <button onclick="react();">press</button>
+</body>
+<script>
+    function react()
+    {
+        var fdiv = document.querySelector("#mosha");
+        var likha = fdiv.innerHTML;
+        if (likha=="<p>Click the button below to change the page.</p>") 
+        {
+            //fdiv.innerHTML=""
+            fdiv.innerHTML = "<img src=\"x.jpeg\"  height=\"456\" > <p> Akil is gay.</p>";
+           
+        } else {
+            fdiv.innerHTML ="<p>Click the button below to change the page.</p>";
+        }
+        
+        
+    }
+</script>
+</html>
